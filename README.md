@@ -1,6 +1,7 @@
 # Low-Level Design
 
-![image](https://github.com/user-attachments/assets/823397f5-bc20-48e9-8e5d-26d3908b28c7)
+![image](https://github.com/user-attachments/assets/d64751ab-9e5e-49c3-9549-0e343bed4b08)
+
 
 # Tic Tac Toe Game
 
