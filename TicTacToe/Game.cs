@@ -10,7 +10,7 @@ namespace TicTacToe
 {
     public class Game
     {
-        private Board _board;
+        private IBoard _board;
         private Player _player1;
         private Player _player2;
         private Player _currentPlayer;
