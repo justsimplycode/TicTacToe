@@ -10,9 +10,9 @@ namespace TicTacToe.Models
     {
         public string Name { get; set; }
 
-        public string Marker { get; set; }
+        public char Marker { get; set; }
 
-        public Player(string Name, string Marker)
+        public Player(string Name, char Marker)
         {
             this.Name = Name;
             this.Marker = Marker;

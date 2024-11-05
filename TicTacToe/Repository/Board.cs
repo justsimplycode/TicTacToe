@@ -18,15 +18,19 @@ namespace TicTacToe.Repository
             InitializeBoard();
         }
 
-        public void Display()
+        public void DisplayBoard()
         {
             for (int i = 0; i < 3; i++)
+            {
                 for (int j = 0; j < 3; j++)
-                    Console.Write($"{_grid[i, j]}  ");
+                {
+                    Console.Write(_grid[i, j] + " ");
+                }
                 Console.WriteLine();
+            }
         }
 
-        public bool GetWinner(char marker)
+        public bool CheckWin(char marker)
         {
             //check diagonals for a win
             if ((_grid[0,0] == marker && _grid[1, 1] == marker && _grid[2, 2] == marker) 
@@ -50,7 +54,7 @@ namespace TicTacToe.Repository
             return false;
         }
 
-        public bool isFull()
+        public bool IsFull()
         {
             foreach (char cell in _grid)
                 if (cell == '-')

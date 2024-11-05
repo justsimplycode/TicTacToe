@@ -9,11 +9,11 @@ namespace TicTacToe.Repository
 {
     public interface IBoard
     {
-        public void Display();
+        public void DisplayBoard();
 
-        public bool GetWinner(char marker);
+        public bool CheckWin(char marker);
 
-        public bool isFull();
+        public bool IsFull();
 
         public bool MakeMove(int row, int col, char marker);
     }
